@@ -1,0 +1,39 @@
+{
+  "name": "pako",
+  "main": "dist/pako.js",
+  "homepage": "https://github.com/nodeca/pako",
+  "authors": [
+    "Andrei Tuputcyn <Andrew.Tupitsin@gmail.com>",
+    "Vitaly Puzrin <vitaly@rcdesign.ru>"
+  ],
+  "description": "deflate / inflate / gzip for bworser - very fast zlib port",
+  "keywords": [
+    "zlib",
+    "deflate",
+    "inflate",
+    "gzip"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "Makefile",
+    "index*",
+    "lib",
+    "benchmark",
+    "coverage"
+  ],
+  "version": "0.2.8",
+  "_release": "0.2.8",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.8",
+    "commit": "08c5cfb4fe2f744bedbd249be908bba0d8fc0946"
+  },
+  "_source": "git://github.com/nodeca/pako.git",
+  "_target": "~0.2.8",
+  "_originalSource": "pako",
+  "_direct": true
+}
