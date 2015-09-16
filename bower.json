@@ -1,0 +1,26 @@
+{
+  "name": "hashHosted",
+  "version": "0.0.0",
+  "authors": [
+    "Lasse Fister <commander@graphicore.de>"
+  ],
+  "description": "Store the data of your blog (or anything else) in the \"#\" part of the url as base64 encoded, zipped JSON.",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "unhosted",
+    "hash storage",
+    "fragment identifier storage"
+  ],
+  "license": "GPL v3",
+  "homepage": "hh.graphicore.de",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib/bower_components",
+    "test",
+    "tests"
+  ]
+}
