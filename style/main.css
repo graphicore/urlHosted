@@ -24,6 +24,109 @@ form.edit {
 }
 /** END absolute essentials **/
 
+
+
+html {
+    background: #ddd;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%
+}
+
+
+main {
+    width: 100%;
+    min-height: 100%;
+}
+
+main > header {
+    background: #696;
+    border-bottom: 1px solid black;
+    padding: .7em 0;
+}
+
+main > header > *{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main > header > *:first-child {
+    margin-top: 0;
+}
+main > header > *:last-child {
+    margin-bottom: 0;
+}
+
+.controls button {
+    border: 3px solid white;
+    background: #ddd;
+}
+
+.controls button:hover {
+    border: 3px solid #bbb;
+    background: white;
+    color: #696;
+}
+
+form.edit {
+    margin-top: .7em;
+}
+
+form.edit label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+form.edit label:last-child{
+    margin-bottom: 0;
+}
+
+form.edit label > * {
+    vertical-align: top;
+}
+
+form.edit label >span {
+    display: inline-block;
+    width: 70px;
+}
+form.edit label > input,
+form.edit label > textarea {
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    border: 3px solid #ddd ;
+    padding: .5em;
+    min-height: 2em;
+    font-size: 1em;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+form.edit label .input-author{
+    width: 300px;
+}
+
+form.edit .input-content{
+    min-height: 8em;
+}
+
 h1 {
     color: darkred;
+}
+
+article {
+    background: #ddd;
+    padding: .5em;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    box-sizing: border-box;
+}
+article > * {
+
+
 }
