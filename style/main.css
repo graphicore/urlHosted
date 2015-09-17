@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,200,300,600);
+
 /** absolute essentials **/
 form.edit {
     display: none;
@@ -25,9 +27,14 @@ form.edit {
 /** END absolute essentials **/
 
 
-
 html {
     background: #ddd;
+    font-weight: 400;
+}
+
+html, input, textarea, button {
+    font-family: 'Work Sans', sans-serif;
+
 }
 
 html, body {
@@ -43,13 +50,16 @@ main {
 }
 
 main > header {
-    background: #696;
+    background: #9a9;
     border-bottom: 1px solid black;
     padding: .7em 0;
+    position: relative;
 }
 
-main > header > *{
-    max-width: 1000px;
+main > header > *,
+form.edit label > textarea,
+article {
+    max-width: 650px;
     margin: 0 auto;
 }
 
@@ -60,15 +70,79 @@ main > header > *:last-child {
     margin-bottom: 0;
 }
 
+main > header .controls {
+    position: relative;
+}
+
+main > header .app-title {
+    color: white;
+    font-size: 1.8em;
+    font-weight: 300;
+    vertical-align: middle;
+    line-height: 1;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 3px;
+}
+
+@media screen and (max-width: 350px){
+    main > header .app-title {
+        font-size: 2.8em;
+        font-weight: 200;
+        position: static;
+        margin-bottom: .3em;
+    }
+    main > header .controls {
+        text-align: center;
+    }
+
+}
+
+
+main > header a.about{
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
 .controls button {
     border: 3px solid white;
     background: #ddd;
+    font-size: 1.1em;
+    font-weight: 400;
 }
 
 .controls button:hover {
     border: 3px solid #bbb;
     background: white;
-    color: #696;
+    color: #9a9;
+}
+
+.share-box {
+    padding: 0.5em;
+    margin-top: 0.7em;
+    background: #ac6;
+    border: 3px solid white;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
+
+.share-box .call-to-action {
+    display: block;
+    font-size: 3.5em;
+    margin: 0.1em 0px;
+    font-weight: 200;
+}
+
+.share-box .tip{
+    font-weight: 400;
+    margin: 1em 0;
+}
+
+.share-box input.link {
+    width: 70%;
 }
 
 form.edit {
@@ -92,19 +166,25 @@ form.edit label >span {
     display: inline-block;
     width: 70px;
 }
+
+.share-box .link,
+form.edit label > input,
+form.edit label > textarea {
+    font-size: 1em;
+    font-family: "Work Sans",sans-serif;
+    font-weight: 400;
+    min-height: 2em;
+    border: 3px solid #ddd ;
+    background: white
+    padding: .5em;
+}
+
 form.edit label > input,
 form.edit label > textarea {
     display: inline-block;
-    padding: 0;
     width: 100%;
-    border: 3px solid #ddd ;
-    padding: .5em;
-    min-height: 2em;
-    font-size: 1em;
-    font-family: sans-serif;
     box-sizing: border-box;
 }
-
 
 form.edit label .input-author{
     width: 300px;
@@ -114,19 +194,78 @@ form.edit .input-content{
     min-height: 8em;
 }
 
-h1 {
-    color: darkred;
-}
 
 article {
     background: #ddd;
-    padding: .5em;
-    max-width: 1000px;
     margin: 0 auto;
     background: white;
     box-sizing: border-box;
+    font-size: 1.2 em;
+    padding-bottom: 3em;
 }
-article > * {
+
+article header {
+    padding: 1em 1em 0.3em;
+    border-bottom: 3px dotted #9a9;
+    margin-bottom: 1em
+}
+
+.display-content {
+    padding:  0 1em;
+    font-size: 18px;
+}
 
 
+article header h1 {
+    margin: 0;
+    font-size: 4em;
+    font-weight: 200;
+    margin: .2em 0 .3em;
+}
+
+article header .author,
+article header .date{
+    font-size: .8em;
+}
+
+h1 {
+    color: darkred;
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: .3em;
+}
+
+h2 {
+    color: darkred;
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: .3em;
+}
+
+h3, h4 {
+    color: #555;
+    margin-bottom: .5em;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+hr {
+    color: darkred;
+    border: solid 1.5px;
+    margin-bottom: 1em;
+}
+
+em {
+    color: darkred;
+    font-style: normal;
+    font-weight: 300;
+}
+
+a {
+    color: darkred;
+}
+a:visited{
+    color: #555;
 }
