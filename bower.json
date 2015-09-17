@@ -1,10 +1,10 @@
 {
-  "name": "hashHosted",
+  "name": "urlHosted",
   "version": "0.0.0",
   "authors": [
     "Lasse Fister <commander@graphicore.de>"
   ],
-  "description": "Store the data of your blog (or anything else) in the \"#\" part of the url as base64 encoded, zipped JSON.",
+  "description": "Store the data of your blog (or anything else) in the \"#\" part of the URL as base64 encoded, zipped JSON.",
   "moduleType": [
     "amd"
   ],
@@ -14,7 +14,7 @@
     "fragment identifier storage"
   ],
   "license": "GPL v3",
-  "homepage": "hh.graphicore.de",
+  "homepage": "urlhosted.graphicore.de",
   "ignore": [
     "**/.*",
     "node_modules",
