@@ -30,11 +30,11 @@ form.edit {
 html {
     background: #ddd;
     font-weight: 400;
+    overflow-y: scroll;
 }
 
 html, input, textarea, button {
     font-family: 'Work Sans', sans-serif;
-
 }
 
 html, body {
@@ -99,21 +99,31 @@ main > header .app-title {
 
 }
 
-
 main > header a.about{
     color: white;
     font-weight: 400;
     text-decoration: none;
 }
 
-.controls button {
+
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+.controls button,
+sd.editing .controls button.control-edit:hover,
+sd.sharing .controls button.control-generate:hover {
+    cursor: pointer;
     border: 3px solid white;
     background: #ddd;
     font-size: 1.1em;
     font-weight: 400;
 }
 
-.controls button:hover {
+sd.controls button:hover,
+.editing .controls button.control-edit,
+.sharing .controls button.control-generate {
     border: 3px solid #bbb;
     background: white;
     color: #9a9;
@@ -143,6 +153,21 @@ main > header a.about{
 
 .share-box input.link {
     width: 70%;
+}
+
+.info-box {
+    background-color: rgb(170, 153, 153);
+    border: 3px solid darkred;
+    box-sizing: border-box;
+    display: none;
+    margin-top: 0.7em;
+    padding: 1.5em 0.5em 0.5em;
+    color: white;
+    font-weight: 600;
+}
+
+.info-box > *{
+    font-size: 1.3em;
 }
 
 form.edit {
