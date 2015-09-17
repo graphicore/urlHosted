@@ -1,3 +1,29 @@
+/** absolute essentials **/
+form.edit {
+    display: none;
+}
+
+.editing form.edit{
+    display: block;
+}
+
+.info-box {
+    display: none;
+}
+
+.info-box.visible {
+    display: block;
+}
+
+.share-box {
+    display: none;
+}
+
+.share-box.visible {
+    display: block;
+}
+/** END absolute essentials **/
+
 h1 {
     color: darkred;
 }
