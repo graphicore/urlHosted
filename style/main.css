@@ -113,22 +113,30 @@ button::-moz-focus-inner {
     border: 0;
 }
 
-.controls button,
-sd.editing .controls button.control-edit:hover,
-sd.sharing .controls button.control-generate:hover {
+main header button {
     cursor: pointer;
     border: 3px solid white;
     background: #ddd;
     font-size: 1.1em;
     font-weight: 400;
+    min-width: 4em;
 }
 
-sd.controls button:hover,
-.editing .controls button.control-edit,
-.sharing .controls button.control-generate {
+.editing main header button.control-edit,
+.sharing main header button.control-generate {
     border: 3px solid #bbb;
     background: white;
     color: #9a9;
+}
+
+main header button.control-edit .end,
+.editing main header button.control-edit .init{
+    display: none;
+}
+
+main header button.control-edit .init,
+.editing main header button.control-edit .end {
+    display: inline-block;
 }
 
 .share-box {
