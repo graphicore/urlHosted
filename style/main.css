@@ -54,6 +54,7 @@ main > header {
     border-bottom: 1px solid black;
     padding: .7em 0;
     position: relative;
+    min-height: 28px;
 }
 
 main > header > *,
@@ -99,7 +100,8 @@ main > header .app-title {
 
 }
 
-main > header a.about{
+main > header a.about,
+main > header a.home {
     color: white;
     font-weight: 400;
     text-decoration: none;
@@ -251,6 +253,9 @@ article header h1 {
 article header .author,
 article header .date{
     font-size: .8em;
+}
+article header .date {
+    white-space: nowrap;
 }
 
 h1 {
