@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>About urlHosted</title>
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+</head>
+<body>
+    <main>
+        <header>
+            <div class="controls">
+                <h3 class="app-title">urlHosted</h3><a class="home" href="./">home</a>
+            </div>
+        </header>
+        <article>
+            <header>
+                <h1>What is this?</h1>
+            </header>
+            <div class="display-content">
+            <p><em>urlHosted</em> is an <strong>experimental</strong> web app that misuses
+the part after the <a href="https://en.wikipedia.org/wiki/Fragment_identifier">&quot;#&quot;</a>
+of a URL to store and read data.</p>
+<p>The app is <strong>unhosted</strong>. See this definition from <a href="https://unhosted.org/">unhosted.org</a>:</p>
+<blockquote>
+<p>Also known as &quot;serverless&quot;, &quot;client-side&quot;, or &quot;static&quot; web apps, unhosted web apps do not send your user data to their server. Either you connect your own server at runtime, or your data stays within the browser.</p>
+</blockquote>
+<p>This means this app neither stores nor sends any of your
+data to any server. Instead, the link that loads the site
+must bring it&#39;s own data. That data—if it can be read—will
+be displayed.</p>
+<p>This is <strong>FLOSS—Free Libre Open Source Software</strong>
+under the <em>GPL v3</em>. <a href="https://github.com/graphicore/urlHosted">The repository</a> is at GitHub.
+The Software is hosted for free directly from <a href="https://pages.github.com/">GitHub Pages</a>
+and anyone can do this!</p>
+<h2 id="how-does-it-work-">How does it work?</h2>
+<p>Simple. Whenever you visit the site with <em>payload</em>
+data in the URL, the app renders that data as an article.
+When you visit the site without payload data in the URL
+you are directly presented with the editor interface.</p>
+<p>At any time you can toggle the editor interface using
+the <strong>Edit</strong> button at the top of the app.
+Regardless if you came with a payload link or not.
+To make things easier, the text input for  the main
+article text supports <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>
+and also a subset of HTML.</p>
+<p>Press the <strong>Share!</strong> button whenever you
+want to share your article or just store  it in your
+bookmarks list. <em>All data from the form, plus the
+current date and time is serialized</em> and a new
+link is created. A box opens and presents the link to
+be copied. Note that this box closes as soon as you
+modify the data, because the generated link is outdated
+then. You can also close the share box at any time by
+hitting the <strong>Share!</strong> button again.</p>
+<h2 id="why-">Why?</h2>
+<p>Well, it&#39;s an experiment. I am eager to see if someone
+will <em>make something useful</em> out of this. Either by being
+inspired or by using it directly as a blogging platform.</p>
+<p>This tool has already a useful <a href="http://tarobish.github.io/Jomhuria/#live">predecessor</a>
+that I made shortly before. It is a tool to create
+web-font test cases instantly in a font development project.
+These test cases can then be stored in the according
+issue thread in the bug-tracker, <a href="https://github.com/Tarobish/Jomhuria/issues/32#issuecomment-140595002">just like here</a>.</p>
+<p>It will also be interesting to see where the technical
+limits are. URLs are designed to be short and to point
+to resources, not to be the resource by themselves. That
+said, I like the idea of saving these URLs at URL-shortener
+providers. Take twitter for example, you can instantly
+tweet pretty long texts, without having to host them
+anywhere. t.co, goo.gl or bit.ly will be your host.</p>
+<h2 id="who-">Who?</h2>
+<p>My name is Lasse Fister. <a href="http://graphicore.de/en/page/lasse">My contact data is here</a>.</p>
+<h2 id="caveats">Caveats</h2>
+<p> I don&#39;t know about the technical limits like maximal
+URL length in different scenarios or how save/persistent
+your data is when stored at a URL-shortener. I also don&#39;t
+know how the legal situation is for hosting a service
+like this. If there is trouble I will probably take
+it down when indicated and see how to resolve that.</p>
+<h2 id="what-else-">What else?</h2>
+<p>Here is a kitten<br />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/S%C3%B6t_kattunge.JPG/320px-S%C3%B6t_kattunge.JPG" alt="cat"><br />
+CC-BY-SA-3.0 by Wikimedia user 1qaz2 (has no profile)</p>
+
+            </div>
+        </article>
+    </main>
+</body>
+</html>
+
+

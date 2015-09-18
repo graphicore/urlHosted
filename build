@@ -1,0 +1,3 @@
+#!/bin/sh
+
+./bin/make_aboutHTML.js > about.html
