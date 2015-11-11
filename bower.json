@@ -1,6 +1,5 @@
 {
   "name": "urlHosted",
-  "version": "0.0.0",
   "authors": [
     "Lasse Fister <commander@graphicore.de>"
   ],
@@ -10,11 +9,14 @@
   ],
   "keywords": [
     "unhosted",
-    "hash storage",
-    "fragment identifier storage"
+    "hash",
+    "storage",
+    "fragment",
+    "identifier",
+    "storage"
   ],
   "license": "GPL v3",
-  "homepage": "urlhosted.graphicore.de",
+  "homepage": "github.com/graphicore/urlhosted",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -28,5 +30,6 @@
     "pako": "~0.2.8",
     "requirejs": "~2.1.20",
     "requirejs-domready": "~2.0.1"
-  }
+  },
+  "main": "lib/main.js"
 }
